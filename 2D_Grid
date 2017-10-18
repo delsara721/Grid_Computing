@@ -1,3 +1,5 @@
+//Delsey Sabu
+//2-D PDE solver grid wwithout MPI
 #include<iostream>
 #include <math.h>
 using namespace std; 
