@@ -1,3 +1,5 @@
+!Delsey Sabu
+!Heat Equation cos(x)
 program main
 implicit none 
 real, dimension (4) :: position_array
