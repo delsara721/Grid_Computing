@@ -1,3 +1,6 @@
+//Delsey Sabu
+//1-D PDE solver using heat equation e^-(x^2)
+
 #include <iostream>
 #include<math.h>
 #include <mpi.h>
