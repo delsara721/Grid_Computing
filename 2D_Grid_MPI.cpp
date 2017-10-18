@@ -1,3 +1,6 @@
+//Delsey Sabu
+//2-D PDE solver 
+//the domain is broken into 4 different arrays where work is done, but the 4 communicate with each other after every timestep (using MPI)
 #include <iostream>
 #include<math.h>
 #include <mpi.h>
@@ -38,7 +41,7 @@ MPI_Init(NULL, NULL);
   if (world_size < 2) {
     fprintf(stderr, "World size must be greater than 1 for %s\n", argv[0]);
     MPI_Abort(MPI_COMM_WORLD, 1);}
-
+//make 8 arrays
 double ul_new[ROWS_X][ROWS_Y]; 
 double ul_old[ROWS_X][ROWS_Y];
 double ur_new[ROWS_X][ROWS_Y]; 
@@ -141,7 +144,7 @@ printT(dr_old);
 } //end else if 
 
 
-
+//for time steps
 for (int i =0; i<period; i++)
 { 
 
